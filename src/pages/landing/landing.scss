@@ -1,0 +1,96 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.jumbotron {
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  // background: rgb(195, 219, 233);
+  // background: radial-gradient(
+  //   circle,
+  //   rgba(0, 1, 2, 0.856) 25%,
+  //   rgba(208, 220, 232, 0.9990371148459384) 75%
+  // );
+  background: rgb(184, 235, 255);
+  background: radial-gradient(
+    circle,
+    rgba(184, 235, 255, 1) 54%,
+    rgba(99, 176, 205, 1) 100%
+  );
+  justify-content: center;
+}
+.logo-image {
+  justify-content: center;
+  width: 800px;
+  @include media-breakpoint-down(md) {
+    width: 400px;
+  }
+  @include media-breakpoint-down(xs) {
+    width: 300px;
+  }
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px #ffffff9f;
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 8px;
+  margin-bottom: 32px !important;
+  padding-bottom: 1px;
+  background-color: #e9ecef;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  display: flex;
+  color: black !important;
+  font: 14pt !important;
+
+  /* -webkit-box-shadow: 2px 2px 22px -10px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 2px 2px 22px -10px rgba(0, 0, 0, 0.28);
+  box-shadow: 2px 2px 22px -10px rgba(0, 0, 0, 0.28); */
+  /* border-radius: 25px; */
+}
+
+.row {
+  display: flex;
+}
+
+.footer {
+  // position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  padding: 10px;
+  /* margin-top: 2rem;
+  margin-bottom: 0; */
+}
+
+a {
+  color: black !important;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
