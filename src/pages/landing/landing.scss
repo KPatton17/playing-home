@@ -2,31 +2,45 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
-.jumbotron {
-  margin-bottom: 0 !important;
-  padding: 0 !important;
-  // background: rgb(195, 219, 233);
-  // background: radial-gradient(
-  //   circle,
-  //   rgba(0, 1, 2, 0.856) 25%,
-  //   rgba(208, 220, 232, 0.9990371148459384) 75%
-  // );
+@import "../../scss/variables.scss";
+
+.landing-container {
+  min-height: calc(100vh - 40px);
+}
+
+.landing-hero {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
   background: rgb(184, 235, 255);
   background: radial-gradient(
     circle,
     rgba(184, 235, 255, 1) 54%,
     rgba(99, 176, 205, 1) 100%
   );
-  justify-content: center;
 }
-.logo-image {
-  justify-content: center;
-  width: 800px;
-  @include media-breakpoint-down(md) {
-    width: 400px;
+
+.landing-nav {
+  img {
+    @include media-breakpoint-down(md) {
+      width: 150px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 125px;
+    }
   }
-  @include media-breakpoint-down(xs) {
-    width: 300px;
+}
+
+.logo-image {
+  width: 100%;
+  img {
+    width: 600px;
+    @include media-breakpoint-down(md) {
+      width: 400px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 300px;
+    }
   }
 }
 
@@ -50,6 +64,7 @@ h1 {
   padding-bottom: 1px;
   background-color: #e9ecef;
   font-family: "Montserrat", sans-serif;
+  font-size: 14pt;
   display: flex;
   justify-content: space-around;
 }
@@ -70,15 +85,13 @@ h1 {
 }
 
 .footer {
-  // position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  background-color: #fff;
+  font-size: 14pt;
   padding: 10px;
-  /* margin-top: 2rem;
-  margin-bottom: 0; */
+  height: 50px;
 }
 
 a {

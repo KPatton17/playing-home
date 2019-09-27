@@ -1,28 +1,32 @@
-import React  from 'react';
+import React, {Component} from 'react';
+import { withRouter } from "react-router-dom";
 import './landing.scss';
-
-
+import routes from "../../routes";
 import CityBox from "../../components/cityBox/cityBox"
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Form, FormControl, Button } from 'react-bootstrap';
+import { Nav} from 'react-bootstrap';
+import NavBar from "../../components/navBar/navBar"
 
-function App() {
+export class Landing extends Component {
+  
+  handleClick = () => {
+    console.log('click!')
+    this.props.history.push(routes.pittsburgh); 
+  }
+
+  render(){
   return (
     <div className="App">
-      <header class='d-flex jumbotron jumbotron-fluid'>
-        <img src = "./img/playing-home-1.svg" alt= "logo" className ="logo-image"/>
-      </header>
-  
-        <Nav className="justify-content-center">
-          <Nav.Link href="pittsburgh">Restaurants</Nav.Link>
-          <Nav.Link href="#pricing">Lodging</Nav.Link>
-          <Nav.Link href="#pricing">Walking Tours</Nav.Link>
-          <Nav.Link href="#pricing">Transportation</Nav.Link>
-          <Nav.Link href="#pricing">Itineraries</Nav.Link>
-        </Nav>
-  
-
+      <div className= "landing-container">
+        <div className = "landing-hero ">
+          <div className = "d-flex landing-nav justify-content-between">
+            <img src= "./img/logo-small2.svg" alt="small logo"/>
+            <NavBar></NavBar>
+          </div>
+          <div className = "d-flex logo-image justify-content-center"> 
+            <img src="./img/playing-home-1.svg" alt="logo"/> 
+          </div>
+      </div>
       <div className ="container-fluid">
-
         <div className= "row "> 
         {/* <SearchBar/> */}
         <CityBox 
@@ -48,11 +52,12 @@ function App() {
         <CityBox
           city="Pittsburgh"
           image="/img/pittsburgh.jpg"
+          onClick={()=>this.handleClick()}
         />
   
         </div>
       </div>
-
+      </div>
       <footer className="footer">
           <a href="#pricing">About</a>
           <a href="#pricing">Contact</a>
@@ -61,5 +66,6 @@ function App() {
     </div>
   );
 }
+}
 
-export default App;
+export default withRouter(Landing);

@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="pittsburgh-container">
         <CityHero city="Pittsburgh" image="./img/pittsburgh.jpg"></CityHero>
-        <div className="pittsburgh-blurb">
-            <h3>About</h3>
+        <div className="pittsburgh-blurb mb-3">
+            <h3 className="mb-3"> About</h3>
             <p> This is information about Pittsburgh. Welcome to the Pittsburgh blurb.  </p>
             <p>
                 Pittsburgh has a rich history in arts and culture dating from 19th century industrialists commissioning and donating public works, such as Heinz Hall for the Performing Arts and the Benedum Center, home to the Pittsburgh Symphony Orchestra and Pittsburgh Opera, respectively as well as such groups as the River City Brass Band and the Pittsburgh Youth Symphony Orchestra.
