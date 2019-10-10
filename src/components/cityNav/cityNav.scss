@@ -1,0 +1,33 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+@import "../../scss/variables.scss";
+
+.nav-bar-container {
+    overflow: hidden;
+    display: none !important;
+    a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14pt;
+        color: white !important;
+        margin-bottom: 1rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+.dropdown-nav {
+    position: absolute; 
+    top: 0; 
+    a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14pt;
+        color: white !important;
+        margin-bottom: 1rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+}
+

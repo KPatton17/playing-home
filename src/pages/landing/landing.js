@@ -3,8 +3,7 @@ import { withRouter } from "react-router-dom";
 import './landing.scss';
 import routes from "../../routes";
 import CityBox from "../../components/cityBox/cityBox"
-import { Nav} from 'react-bootstrap';
-import NavBar from "../../components/navBar/navBar"
+import CityNav from "../../components/cityNav/cityNav"
 
 export class Landing extends Component {
   
@@ -18,12 +17,14 @@ export class Landing extends Component {
     <div className="App">
       <div className= "landing-container d-flex flex-column">
         <div className = "landing-hero ">
-          <div className = "d-flex landing-nav justify-content-between">
+          <div className = "d-flex landing-nav justify-content-start">
             <img src= "./img/logo-small2.svg" alt="small logo"/>
-            <NavBar></NavBar>
           </div>
           <div className = "d-flex hero-text"> 
               Make Every City Feel Like Home
+          </div>
+          <div className = "city-nav">
+          <CityNav></CityNav>
           </div>
         </div>
 
