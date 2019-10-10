@@ -9,7 +9,7 @@ export const CityBox = ({
     onClick
 }) => {
     return (
-        <div className = "col-lg-4 col-sm-6">
+        <div className = "col-lg-6">
             <div className = "city-box">
              {city}
             <img src = {image} alt={city} onClick={onClick}/> 
