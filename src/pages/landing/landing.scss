@@ -6,6 +6,7 @@
 
 .landing-container {
   min-height: calc(100vh - 40px);
+  width:100% !important;  
 }
 
 .landing-hero {
@@ -81,7 +82,7 @@ h1 {
 }
 
 .row {
-  display: flex;
+
 }
 
 .footer {

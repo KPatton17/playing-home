@@ -16,7 +16,7 @@ export class Landing extends Component {
   render(){
   return (
     <div className="App">
-      <div className= "landing-container">
+      <div className= "landing-container d-flex flex-column">
         <div className = "landing-hero ">
           <div className = "d-flex landing-nav justify-content-between">
             <img src= "./img/logo-small2.svg" alt="small logo"/>
@@ -26,42 +26,44 @@ export class Landing extends Component {
             <img src="./img/playing-home-1.svg" alt="logo"/> 
           </div>
       </div>
-      <div className ="container-fluid">
-        <div className= "row "> 
-        {/* <SearchBar/> */}
-        <CityBox 
-          city="Baltimore"
-          image="/img/baltimore.jpg"
-        />
-        <CityBox
-          city="Chicago"
-          image="/img/chicago3.jpg"
-        />
-         <CityBox
-          city="DC"
-          image="/img/dc.jpg"
-        />
-         <CityBox
-          city="Memphis"
-          image="/img/memphis3.jpg"
-        />
-        <CityBox
-          city="Rochester"
-          image="/img/rochester.jpeg"
-        />
-        <CityBox
-          city="Pittsburgh"
-          image="/img/pittsburgh.jpg"
-          onClick={()=>this.handleClick()}
-        />
+
+      <div className ="landing-cities-container mx-4">
+        <div className= "row flex-grow-1"> 
+          <CityBox 
+            city="Baltimore"
+            image="/img/baltimore.jpg"
+          />
+          <CityBox
+            city="Chicago"
+            image="/img/chicago3.jpg"
+          />
+          <CityBox
+            city="DC"
+            image="/img/dc.jpg"
+          />
+          <CityBox
+            city="Memphis"
+            image="/img/memphis3.jpg"
+          />
+          <CityBox
+            city="Rochester"
+            image="/img/rochester.jpeg"
+          />
   
+          <CityBox
+            city="Pittsburgh"
+            image="/img/pittsburgh.jpg"
+            onClick={()=>this.handleClick()}
+          />
         </div>
       </div>
-      </div>
+    </div>
+   
+
       <footer className="footer">
           <a href="#pricing">About</a>
           <a href="#pricing">Contact</a>
-        </footer>
+      </footer>
 
     </div>
   );
