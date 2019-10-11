@@ -12,9 +12,17 @@ export class CityHero extends Component{
         this.props.history.push(routes.landing); 
     }
     render(){
-        const{city,image} = this.props; 
+        const{city,image,imageStyle} = this.props; 
+        let backgroundImage; 
+        if(imageStyle){
+            backgroundImage = `${imageStyle},url(${image})`
+            console.log(backgroundImage); 
+        }
+        else{
+            backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(${image})`
+        }
     return (
-        <div className = "city-hero-container" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(${image})`}} >
+        <div className = "city-hero-container" style={{backgroundImage: backgroundImage}} >
 
             <div className = "city-hero-logo" onClick={this.onClick}>
                 <img src= "./img/logo-small2.svg" alt="small logo"/>
