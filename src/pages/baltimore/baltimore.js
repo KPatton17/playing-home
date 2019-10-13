@@ -1,6 +1,7 @@
 import React from 'react';
 import './baltimore.scss';
 import CityHero from "../../components/cityHero/cityHero"; 
+import SideNav from "../../components/sideNav/sideNav"
 
 function App() {
   return (
@@ -8,14 +9,7 @@ function App() {
         <CityHero city="Baltimore" image="./img/baltimore.jpg" imageStyle="linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))"></CityHero>
         
       <div className= "d-flex content-container">
-          <div className = "d-flex sideNav p-2">
-            <a href="/">Cities</a>
-            <a href="/restaurants">Restaurants</a>
-            <a href="/lodging">Lodging</a>
-            <a href="/tours">Tours</a>
-            <a href="/transport">Transport</a>
-            <a href="/itineraries">Itineraries</a>
-          </div>
+        <SideNav></SideNav>
           <div className="pittsburgh-blurb">
             <h3>About</h3>
             <p> This is information about Pittsburgh. Welcome to the Pittsburgh blurb.  </p>

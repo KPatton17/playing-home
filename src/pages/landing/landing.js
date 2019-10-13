@@ -7,9 +7,8 @@ import CityNav from "../../components/cityNav/cityNav"
 
 export class Landing extends Component {
   
-  handleClick = () => {
-    console.log('click!')
-    this.props.history.push(routes.pittsburgh); 
+  handleClick = (city) => {
+    
   }
 
   render(){
@@ -46,6 +45,7 @@ export class Landing extends Component {
           <CityBox 
             city="Baltimore"
             image="/img/baltimore.jpg"
+            onClick={()=>this.props.history.push(routes.baltimore)}
           />
           <CityBox
             city="Chicago"
@@ -67,7 +67,7 @@ export class Landing extends Component {
           <CityBox
             city="Pittsburgh"
             image="/img/pittsburgh.jpg"
-            onClick={()=>this.handleClick()}
+            onClick={()=>this.props.history.push(routes.pittsburgh)}
           />
         </div>
       </div>
