@@ -7,9 +7,6 @@ import CityNav from "../../components/cityNav/cityNav"
 
 export class Landing extends Component {
   
-  handleClick = (city) => {
-    
-  }
 
   render(){
   return (

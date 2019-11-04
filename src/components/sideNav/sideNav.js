@@ -11,15 +11,15 @@ export class SideBar extends Component {
 
     render(){
         return (
-           <div className = "d-flex sideNav p-3">
-            <a href="/">Overview</a>
-            <a href="/">Neighborhoods</a>
-            <a href="/">Food & Drink</a>
-            <a href="/lodging">Activities</a>
-            <a href="/itineraries">Health & Wellness</a>
-            <a href="/tours">Lodging</a>
+        <div className = "d-flex sideNav">
+            <a className="overview" href="#overview">Overview</a>
+            <a className="neighborhoods" href="#neighborhoods">Neighborhoods</a>
+            <a className="food" href="#food">Food & Drink</a>
+            <a href="#activities">Activities</a>
+            <a href="#health">Health & Wellness</a>
+            <a href="#lodging">Lodging</a>
             <a href="#transportation">Transportation</a>
-          </div>
+        </div>
         )
     }
 }
