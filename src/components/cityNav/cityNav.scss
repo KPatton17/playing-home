@@ -9,14 +9,25 @@
     a {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        font-size: 16pt;
+        font-size: 18pt;
         color: white !important;
         margin-bottom: 1rem;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        padding-left: 15px; 
+        padding-right: 15px; 
+    }
+    a:hover{
+        color: white !important; 
     }
     @include media-breakpoint-down(md) {
         display: none;
     }
+        text-align: center;
+        position: absolute;
+        bottom: 0; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+
 }
 .dropdown-nav {
     position: absolute; 

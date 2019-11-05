@@ -4,10 +4,9 @@ import './landing.scss';
 import routes from "../../routes";
 import CityBox from "../../components/cityBox/cityBox"
 import Hero from "../../components/hero/hero"
+import Footer from "../../components/footer/footer"
 
 export class Landing extends Component {
-  
-
   render(){
   return (
     <div className="App">
@@ -23,6 +22,7 @@ export class Landing extends Component {
           <CityBox
             city="Chicago"
             image="/img/chicago3.jpg"
+            onClick={()=>console.log("clicked Chicago")}
           />
           <CityBox
             city="DC"
@@ -43,14 +43,12 @@ export class Landing extends Component {
             onClick={()=>this.props.history.push(routes.pittsburgh)}
           />
         </div>
+        
       </div>
+
+      <Footer/>
     </div>
    
-
-      <footer className="footer">
-          <a href="/about">About</a>
-          <a href="#pricing">Contact</a>
-      </footer>
 
     </div>
   );

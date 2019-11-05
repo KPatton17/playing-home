@@ -11,7 +11,7 @@ export class SideBar extends Component {
 
     render(){
         return (
-        <div className = "sticky-top pt-2 d-flex sideNav">
+        <div className = "sticky-top d-flex sideNav">
             <a className="overview" href="#overview">Overview</a>
             <a className="neighborhoods" href="#neighborhoods">Neighborhoods</a>
             <a className="food" href="#food">Food & Drink</a>

@@ -3,15 +3,30 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
+.page-container{
+    background-color: rgb(251, 251, 251);
+}
 .text-container{
     font-family: "Montserrat", sans-serif;
-    padding: 0px 32px;
-    text-align: justify;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+    padding: 2rem 4rem; 
+    margin: 4rem 8rem 4rem 6rem; 
+    font-size: 14pt; 
+
+    line-height: 40px;
+    justify-self: center;
+
+    max-width: 1500px; 
+
+    h3{
+        font-size: 24pt; 
+        color: #103962; 
+    }
+    border-radius: 6px;
+    background-color: white;
 }
 
 .side-nav-container{
-    // width: 900px; 
-    // @include media-breakpoint-down(lg) {
-    //     display: none; 
-    //   }
+    // box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12);
+
 }

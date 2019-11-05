@@ -5,17 +5,17 @@
 
 .city-box {
   position: relative; 
-  box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
 
   overflow: hidden;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 24pt;
-  text-shadow: -2px -2px 0 #000;
+  font-size: 38pt;
+  text-transform: uppercase;
+  letter-spacing: 8px;
 
   height: 400px; 
-  // width: 800px;
   background-position: center;
   background-size: cover;
 
