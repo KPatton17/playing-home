@@ -1,0 +1,63 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+@import "../../scss/variables.scss";
+
+.landing-hero {
+    width: 100%;
+    padding: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/morgan-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    height: 800px; 
+    @include media-breakpoint-down(md) {
+      height: 500px;
+    }
+    @include media-breakpoint-down(xs) {
+      height: 300px;
+    }
+  
+  }
+
+  .landing-nav {
+    img {
+      @include media-breakpoint-down(md) {
+        width: 150px;
+      }
+      @include media-breakpoint-down(xs) {
+        width: 125px;
+      }
+    }
+  }
+  
+  .hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-weight: 700; 
+    font-size: 4rem; 
+    @include media-breakpoint-down(md) {
+      font-size: 3rem; 
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 2rem; 
+    }
+  }
+  
+  .city-nav{
+    text-align: center;
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

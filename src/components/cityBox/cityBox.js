@@ -8,12 +8,13 @@ export const CityBox = ({
     image, 
     onClick
 }) => {
+    const backgroundImage =`linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(${image})`
     return (
         <div className = "col-lg-6">
-            <div className = "city-box">
-             {city}
-            <img src = {image} alt={city} onClick={onClick}/> 
-
+            <div className = "city-box" style={{backgroundImage: backgroundImage}}>
+                <div className="text">
+                    {city}
+                </div>
             </div>
         </div>
 );

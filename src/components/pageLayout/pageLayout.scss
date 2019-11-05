@@ -1,8 +1,17 @@
+@import "../../scss/variables.scss";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 .text-container{
     font-family: "Montserrat", sans-serif;
     padding: 0px 32px;
+    text-align: justify;
 }
 
-.sideNav{
-    width: 300px; 
+.side-nav-container{
+    // width: 900px; 
+    // @include media-breakpoint-down(lg) {
+    //     display: none; 
+    //   }
 }

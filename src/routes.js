@@ -1,5 +1,6 @@
 const routes = {
     landing: "/",
+    about: "/about",
     baltimore: "/baltimore", 
     pittsburgh: "/pittsburgh"
 
